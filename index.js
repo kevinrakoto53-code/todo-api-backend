@@ -6,7 +6,11 @@ const connectDB = require("./config/database");
 const app = express();
 const cors = require('cors');
 app.use(cors({
-  origin: ['https://todo-app-frontend-gold-one.vercel.app', 'http://localhost:5173'],
+  origin: [
+    'http://localhost:5173',
+    'https://todo-app-frontend-gold-one.vercel.app',
+    /\.vercel\.app$/
+  ],
   credentials: true
 }));
 const port = process.env.PORT || 5000;
