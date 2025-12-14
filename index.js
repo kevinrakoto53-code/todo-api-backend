@@ -6,7 +6,7 @@ const connectDB = require("./config/database");
 const app = express();
 const cors = require('cors');
 app.use(cors({
-  origin: '*' , 
+  origin: 'todo-app-frontend-pcrjsyfkh-kevinrakoto53-codes-projects.vercel.app' , 
   credentials: true
 }));
 const port = process.env.PORT || 5000;
